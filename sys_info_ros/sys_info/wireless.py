@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 try:
     import gi
-    gi.require_version("NM", "1.0")
+    gi.require_version('NM', '1.0')
     from gi.repository import NM
     nmc = NM.Client.new(None)
     devs = nmc.get_devices()

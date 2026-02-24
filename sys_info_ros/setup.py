@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'sys_info'
+package_name = 'sys_info_ros'
 
 setup(
     name=package_name,
@@ -16,12 +16,12 @@ setup(
     zip_safe=True,
     maintainer='Andreas Bresser',
     maintainer_email='andreas.bresser@dfki.de',
-    description='ROS 2 Network publication node',
+    description='ROS 2 System information publication node',
     license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'sys_info = sys_info.sys_info:main'
+            'sys_info_ros = sys_info_ros.sys_info_ros:main'
         ],
     },
 )
